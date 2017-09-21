@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					3F0D2AD21F73339300278F35 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2BULHRS882;
+						DevelopmentTeam = WQHEP3TLB2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -259,8 +259,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BULHRS882;
+				DEVELOPMENT_TEAM = WQHEP3TLB2;
 				INFOPLIST_FILE = "MAPD714-F2017-intermediate-User-interactions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mapd714.MAPD714-F2017-intermediate-User-interactions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,8 +273,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BULHRS882;
+				DEVELOPMENT_TEAM = WQHEP3TLB2;
 				INFOPLIST_FILE = "MAPD714-F2017-intermediate-User-interactions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mapd714.MAPD714-F2017-intermediate-User-interactions";
 				PRODUCT_NAME = "$(TARGET_NAME)";

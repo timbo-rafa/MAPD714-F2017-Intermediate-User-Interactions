@@ -37,7 +37,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="cJX-ca-vy5"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-jV-gce">
                                 <rect key="frame" x="16" y="167" width="82" height="21"/>
@@ -51,7 +54,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="lcB-gO-NcM"/>
+                                </connections>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-N2-jlO">
                                 <rect key="frame" x="60" y="251" width="301" height="31"/>
@@ -107,15 +113,26 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.76470588235294112" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Y17-le-Zbf" appends="YES" id="Chh-WM-arP"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="doSomethingButton" destination="OaN-fJ-69m" id="Ozc-GT-MBX"/>
+                        <outlet property="leftSwitch" destination="sJ7-xR-jax" id="3Np-Ps-jyt"/>
                         <outlet property="nameTextField" destination="gYO-dB-cHy" id="EcR-G3-28T"/>
                         <outlet property="numberTextField" destination="mkN-aQ-fuZ" id="zwO-fe-AeP"/>
-                        <outlet property="onSwitchChange" destination="sJ7-xR-jax" id="uIQ-Gt-2Vv"/>
+                        <outlet property="rightSwitch" destination="lD5-8i-7hw" id="bQd-WO-FqV"/>
                         <outlet property="sliderLabel" destination="hg3-N2-jlO" id="RaZ-Ta-YBu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Y17-le-Zbf">
+                    <connections>
+                        <action selector="onTapGestureRecognized:" destination="BYZ-38-t0r" id="cVt-3x-np2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
