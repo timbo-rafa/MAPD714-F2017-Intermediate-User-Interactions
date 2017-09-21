@@ -56,6 +56,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-N2-jlO">
                                 <rect key="frame" x="60" y="251" width="301" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="krn-Lw-PEU"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1b-3I-eaP">
                                 <rect key="frame" x="16" y="256" width="45" height="21"/>
@@ -71,14 +74,23 @@
                                     <segment title="Switches"/>
                                     <segment title="Button"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8TN-rP-sN4"/>
+                                </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJ7-xR-jax">
                                 <rect key="frame" x="16" y="391" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSwitchChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Sry-q0-GCp"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lD5-8i-7hw">
                                 <rect key="frame" x="310" y="391" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSwitchChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="DID-Cw-eG6"/>
+                                </connections>
                             </switch>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaN-fJ-69m">
                                 <rect key="frame" x="16" y="392" width="343" height="30"/>
@@ -89,10 +101,19 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onDoSomethingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKq-B0-3Oo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.76470588235294112" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="gYO-dB-cHy" id="EcR-G3-28T"/>
+                        <outlet property="numberTextField" destination="mkN-aQ-fuZ" id="zwO-fe-AeP"/>
+                        <outlet property="onSwitchChange" destination="sJ7-xR-jax" id="uIQ-Gt-2Vv"/>
+                        <outlet property="sliderLabel" destination="hg3-N2-jlO" id="RaZ-Ta-YBu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
